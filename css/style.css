@@ -1,0 +1,33 @@
+selector  {
+  thuoc-tinh: gia-tri;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #0078d3;
+  font-size: 32px;
+  text-align: center;
+}
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+  border-bottom: 2px solid #0078d3;
+}
+p {
+  color: #666;
+  max-width: 700px;
+  line-height: 1.6;
+}
+a {
+    color: #f10000;
+}
+
+a:hover {
+    color: #c81212; /* Thay đổi màu bạn muốn khi rê chuột vào đây */
+    text-decoration: underline;
+}
