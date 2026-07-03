@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Quang Huy - Giới thiệu</title>
+    <title>Nguyễn Quang Huy - Trang chủ website cá nhân HTML5</title>
+    <meta name="description" content="Khám phá website cá nhân của Nguyễn Quang Huy với thông tin giới thiệu, kỹ năng lập trình web, dự án học tập và các cách liên hệ trực tuyến hữu ích.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+        
 </head>
-<link rel="stylesheet"href="css/style.css">
 <body>
-    <h1>Xin chào thế giới!</h1>
-    <strong>Nguyễn Quang Huy</strong>
-    <h2>Sinh năm: 2007</h2>
-    <p>Quê quán: AAA
-        Ngành: Kỹ thuật phần mềm
-        Năm: 2026 - 2027
-    </p>
-    <h2>Sở thích</h2>
-    <ul>
-        <li>Nghe nhạc</li>
-        <li>Chơi game</li>
-        <li>Xem phim</li>
-    </ul>
-    <h2>Mục tiêu học kì này:</h2>
-    <ol>
-        <li>Học tốt các môn học</li>
-        <li>Tham gia các hoạt động ngoại khóa</li>
-        <li>Cải thiện kỹ năng lập trình</li>
-    <p>Đây là trang web của <a href="#">Nguyễn Quang Huy</a></p>
+
+    <header>
+        <div class="navbar">
+        <div class="logo">Nguyễn Quang Huy</div>
+        <nav class="nav-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="https://github.com/quhuyng/my-website" target="_blank" rel="noopener">Github</a>
+        </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1 id="main-title">Nguyễn Quang Huy</h1>
+        <p>Chào mừng đến với trang web cá nhân của tôi!</p>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h2>Xin chào, tôi là Nguyễn Quang Huy</h2>
+            <p>Sinh viên kỹ thuật phần mềm - ĐH Gia Định</p>
+            <a href="about.html" class="btn-primary">Xem giới thiệu</a>
+        </section>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>HTML5</h3>
+                <p>Thiết kế giao diện và layout responsive</p>
+            </div>
+            
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Lập trình tương tác phía client</p>
+            </div>
+            <div class="card">
+                <h3>Python</h3>
+                <p>Lập trình backend và xử lý dữ liệu</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a> | 
+            Điện thoại: <a href="tel:+84-123-456-789">+84-123-456-789</a>
+        </address>
+        <p>&copy; 2026 Nguyễn Quang Huy. All rights reserved.</p>
+        <p><time datetime="2026-06-25">25 tháng 6, 2026</time></p>
+    </footer>
 
 </body>
 </html>

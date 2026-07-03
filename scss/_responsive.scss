@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+/* Tablet */
+@media (min-width: 768px) {
+  .page-layout {
+    grid-template-columns: 180px 1fr;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .page-layout {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    flex-direction: row;
+  }
+}

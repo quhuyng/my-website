@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Quang Huy - Liên hệ và gửi phản hồi trực tuyến</title>
+    <meta name="description" content="Liên hệ với Nguyễn Quang Huy thông qua biểu mẫu trực tuyến, gửi câu hỏi, phản hồi hoặc yêu cầu hỗ trợ bằng nhiều kênh liên lạc khác nhau.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">Nguyễn Quang Huy</div>
+        <nav class="nav-links">
+    <h1>Form liên hệ</h1>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
+<main>
+<section>
+    <h2>Liên hệ</h2>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Thông tin</legend>
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required minlength="2"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}"><br><br>
+        <label for="date">Ngày sinh:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="university">Trường đại học:</label>
+        <input type="text" id="university" name="university" list="universities"><br><br>
+        <datalist id="universities">
+            <option value="Đại học Bách Khoa Hà Nội">
+            <option value="Đại học Gia Định">
+            <option value="Đại học Ngoại thương">
+            <option value="Đại học Sài Gòn">
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+        <legend>Nội dung</legend>
+        <input type="radio" id="r-email" name="contact-method" value="email" required>
+        <label for="r-email">Email</label>
+        <input type="radio" id="r-phone" name="contact-method" value="phone">
+        <label for="r-phone">Phone</label>
+        <input type="radio" id="r-zalo" name="contact-method" value="zalo">
+        <label for="r-zalo">Zalo</label>
+        <br><br>
+        <label for="message">Nội dung tin nhắn:</label><br>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
+    </fieldset>
+    <br>
+    
+    <button type="submit">Gửi</button>
+    <button type="reset">Xóa</button>
+</form>
+    </section>
+</main>
+    <footer>
+        <address>
+        Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+        Điện thoại: <a href="tel:+84-123-456-789">+84-123-456-789</a>
+        </address>
+        <p>&copy; 2026 Nguyễn Quang Huy. All rights reserved.</p>
+        <time datetime="2026-06-25">25 tháng 6, 2026</time>
+    </footer>
+    <a href="index.html">Trang chủ</a>
+</body>
+</html>

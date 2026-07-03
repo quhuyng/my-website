@@ -1,0 +1,73 @@
+@use 'variables' as *;
+@mixin card-style($bg: white, $radius: $radius) {
+  background: $bg;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: $spacing * 3; }
+
+@mixin flex-center($direction: row)
+{ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction; }
+
+.card
+{ @include card-style();
+  margin-bottom: $spacing * 3;
+  flex: 1;
+  min-width: 250px;
+}
+.navbar 
+{ @include flex-center(); 
+  justify-content: space-between;
+  padding: $spacing * 2 $spacing * 4;
+  background: $color-primary;
+}
+
+.logo {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #93c5fd;
+  margin-left: $spacing * 3;
+  &:hover {
+    color: white;
+  }
+}
+
+.hero {
+  @include flex-center(column);
+  min-height: 300px;
+  background-color: $color-secondary;
+  color: white;
+  text-align: center;
+  padding: $spacing * 6 $spacing * 3;
+  gap: $spacing * 2;
+}
+
+.skill-card {
+  @include card-style();
+  border-left: 4px solid $color-secondary;
+  padding: $spacing * 2 $spacing * 3;
+}
+
+%btn-base {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  @extend %btn-base;
+  background: white;
+  color: $color-primary;
+  &:hover {
+    background: #e2e8f0;
+  }
+}
